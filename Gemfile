@@ -5,6 +5,9 @@ ruby "3.1.2"
 
 gem "autoprefixer-rails"
 
+# Permit us to create faker in seeds[https://github.com/faker-ruby/faker]
+gem "faker"
+
 # font link and icone [https://fontawesome.com/start]
 gem "font-awesome-sass", "~> 6.1"
 

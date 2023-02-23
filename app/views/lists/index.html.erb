@@ -1,0 +1,20 @@
+
+<div class="banner" id="home_banner">
+  <h1 class="container">What kind of film do you want ?</h1>
+</div>
+
+<div class="container" id="index_container">
+  <div class="cards">
+      <% @lists.each do |list| %>
+          <%= link_to list_path(list), class:"card-link" do %>
+          <div class="card-category <%= list.name %>"><p><%=list.name%></p> </div>
+          <% end %>
+      <% end %>
+  </div>
+<hr>
+  <h3>Add a new list ?</h3>
+    <div>
+      <%= render "form", list:@list %>
+    </div>
+</div>
+<%=  %>

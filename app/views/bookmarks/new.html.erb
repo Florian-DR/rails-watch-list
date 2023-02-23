@@ -1,0 +1,14 @@
+<h1>Add a new bookmark 📔</h1>
+<hr>
+
+
+<div>
+  <%= simple_form_for [@list, @bookmark] do |f|%>
+    <%= f.input :comment %>
+    <%= f.association :movie %>
+    <%= f.submit %>
+  <% end %>
+</div>
+<hr>
+
+<p><%= link_to "Back", list_path(@list), class: "btn btn-primary" %></p>

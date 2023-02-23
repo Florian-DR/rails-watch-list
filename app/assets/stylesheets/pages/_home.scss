@@ -1,1 +1,23 @@
 // Specific CSS for your home-page
+#home_banner {
+  background-image: asset-url("cinema.jpeg")
+}
+
+#show_banner {
+  background-image: asset-url("minions.jpeg") ;
+}
+
+.love {
+  background-image: asset-url("love.jpg");
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px ;
+}
+// #index_container{
+//   display: flex;
+//   justify-content: space-between;
+//   gap: 4px ;
+// }
